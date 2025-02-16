@@ -1,4 +1,4 @@
-.playground-wallet {
+playground-wallet {
   display: flex;
   justify-content: center;
   margin-bottom: 18px;
@@ -117,4 +117,100 @@ ul {
 .contracts-title {
   font-weight: 500;
   margin-top: 16px;
+  margin-left: 1px;
+  margin-bottom: 3px;
+}
+
+em {
+  color: var(--theme-text-fade-30) !important;
+  display: flex;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+
+mat-placeholder {
+  display: flex;
+  align-items: center;
+  color: var(--theme-text-fade-30) !important;
+  width: auto;
+  font-size: 10px;
+  
+}
+
+
+.deploy-container {
+  display: flex;  
+  align-items: center;
+  width: 100%;
+}
+
+#gweiValue-placeholder {
+  display: flex ;
+  margin-left: -12px;
+  width: fit-content;
+  margin-top: -14px;
+}
+
+#mat-input-3 {
+  margin-left: -12px;
+}
+
+#gweiValue {
+  min-width: 154px;
+max-width: 184px;
+width: auto; 
+
+  height: 75px !important;
+}
+
+mat-form-field{
+   width: 80% !important;
+    margin-right:10%;
+}
+
+.mat-mdc-form-field-flex{
+  display: flex;
+  background-color: red !important;
+}
+
+// .mdc-notched-outline__notch {
+//   // border-color: var(--theme-text-fade-30) !important;
+// }
+
+// .mdc-notched-outline__trailing{
+//   // border-color: var(--theme-text-fade-30) !important;
+// }
+
+@media screen and (max-width: 1477px) and (min-width: 841px) {
+  .deploy-container {
+    flex-direction: column;
+    width: 25vw;
+  }
+  
+}
+
+@media screen and (max-width: 1030px) and ( min-width:930px ){
+  .deploy-container{
+    width: 100% !important;
+  }
+  
+}
+
+@media screen and (max-width: 1477px) and (min-width: 600px) {
+  .deploy-container {
+    width: 100% !important;
+    align-items: start;
+  }
+  .contracts-title {
+    margin-bottom: 14px;
+  }
+
+  .deploy-wrapper{
+    width:100% !important;
+  }
+
+  mat-form-field{
+    width: 70% !important;
+  }
 }
